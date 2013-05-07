@@ -29,10 +29,13 @@ module.exports = function(grunt) {
 			dest: 'dev/index.html'
 		}
 	});
-
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  
-  //tasks
-  grunt.registerTask('default', ['uglify:dev', 'index']);
+	
+	grunt.loadNpmTasks('grunt-contrib-uglify');
+	//tasks
+	grunt.registerTask('default', ['dev']);
+	grunt.registerTask('dev', 'Development Build', function() {
+		grunt.task.run('index', 'increment-build', 'buildtime');
+	});
+	//grunt.registerTask('default', ['time:start', 'index', 'increment-build', 'time:end']);
 
 };

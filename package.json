@@ -1,6 +1,7 @@
 {
   "name": "grunt_bootstrap",
   "version": "0.0.1",
+  "build": 0,
   "description": "Quick project generation!",
   "repository": {
     "type": "git",
@@ -8,12 +9,11 @@
   },
   "author": "Mario Übleis",
   "license": "MIT",
-  
   "devDependencies": {
-	  "grunt": "*",
-	  "grunt-contrib-jshint": "*",
-	  "grunt-contrib-uglify": "*",
-	  "grunt-contrib-less": "*",
-	  "grunt-contrib-watch": "*"
+    "grunt": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-less": "*",
+    "grunt-contrib-watch": "*"
   }
 }
