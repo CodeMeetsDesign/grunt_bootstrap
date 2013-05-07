@@ -1,0 +1,18 @@
+{
+	"usage": {
+		"projectName": "The name of your new awesome Project",
+		"projectType": "The type can be (raw or bootstrap)"
+	},
+	
+	"projectName": "Steammusic",
+	
+	"projectType": "bootstrap",
+	
+	"jsLibrary": [
+		{"url": "http://backbonejs.org/backbone.js", "filename": "backbone.js"},
+		{"url": "http://code.jquery.com/jquery-1.9.1.js", "filename": "jquery.js"},
+		{"url": "http://underscorejs.org/underscore.js", "filename": "underscore.js"}
+	],
+	
+	"gaCode": "UA-XXXX-XXXX"
+}

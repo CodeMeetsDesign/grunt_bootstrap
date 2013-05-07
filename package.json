@@ -1,0 +1,19 @@
+{
+  "name": "grunt_bootstrap",
+  "version": "0.0.1",
+  "description": "Quick project generation!",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CodeMeetsDesign/grunt_bootstrap.git"
+  },
+  "author": "Mario Übleis",
+  "license": "MIT",
+  
+  "devDependencies": {
+	  "grunt": "*",
+	  "grunt-contrib-jshint": "*",
+	  "grunt-contrib-uglify": "*",
+	  "grunt-contrib-less": "*",
+	  "grunt-contrib-watch": "*"
+  }
+}
