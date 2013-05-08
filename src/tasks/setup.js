@@ -2,7 +2,8 @@ var exec = require('child_process').exec;
 
 module.exports = function( grunt ) {
     grunt.registerTask("setup", "Setup a new Project", function(arg) {
-        var config = grunt.config('config');
+        var settings = grunt.config('settings'),
+        	curlFiles = grunt.config('curl');
         	
         switch(config.projectType) {
 	        case 'raw':
@@ -12,7 +13,16 @@ module.exports = function( grunt ) {
 	        case 'bootstrap':
 	        	grunt.log.writeln('Donwloading the Bootstrap-Files');
 	        	grunt.log.writeln('Please wait...');
+	        	
 	        	cloneBootstrap(this);
+	        	
+	        	//Download the jsLibrarys set in settings
+	        	settings[settings.projectType].jsLibrarys.forEach(function(item) {
+		        	curlFiles[item.path] = item.url;
+	        	});
+	        	grunt.config('curl', curlFiles);
+	        	grunt.task.run('curl');
+	        	
 	        break;
 	        
 	        default:

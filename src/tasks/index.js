@@ -4,6 +4,6 @@ module.exports = function( grunt ) {
             tmpl = grunt.file.read(conf.src);
 
         grunt.file.write(conf.dest, grunt.template.process(tmpl));
-        grunt.log.writeln('Generated \'' + conf.dest + '\' from \'' + conf.src + '\'');
+        grunt.log.writeln('Generated \'' + conf.dest + '\' from \'' + conf.src + '\'').ok();
     });
 }

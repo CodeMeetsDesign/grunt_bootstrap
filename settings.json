@@ -4,15 +4,27 @@
 		"projectType": "The type can be (raw or bootstrap)"
 	},
 	
-	"projectName": "Steammusic",
+	"projectName": "My new awesome project",
 	
 	"projectType": "bootstrap",
 	
-	"jsLibrary": [
-		{"url": "http://backbonejs.org/backbone.js", "filename": "backbone.js"},
-		{"url": "http://code.jquery.com/jquery-1.9.1.js", "filename": "jquery.js"},
-		{"url": "http://underscorejs.org/underscore.js", "filename": "underscore.js"}
-	],
+	"bootstrap": {
+		"jsLibrarys": [
+			{"url": "http://code.jquery.com/jquery-1.9.1.js", "path": "src/js/libs/jquery.js"}
+		],
+		
+		"jsComponents": [
+			"bootstrap-affix.js",
+			"bootstrap-tab.js"
+		]
+	},
 	
-	"gaCode": "UA-XXXX-XXXX"
+	"backbone": {
+		"jsLibrarys": [
+			{"url": "http://backbonejs.org/backbone.js", "path": "src/js/libs/backbone.js"},
+			{"url": "http://underscorejs.org/underscore.js", "path": "src/js/libs/underscore.js"}
+		]
+	},
+	
+	"gaCode": ""
 }
