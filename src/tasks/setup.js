@@ -5,7 +5,7 @@ module.exports = function( grunt ) {
         var settings = grunt.config('settings'),
         	curlFiles = grunt.config('curl');
         	
-        switch(config.projectType) {
+        switch(settings.projectType) {
 	        case 'raw':
 	        	grunt.log.writeln('Project type is raw');
 	        break;
