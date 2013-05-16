@@ -25,6 +25,23 @@ module.exports = function( grunt ) {
 	        	
 	        break;
 	        
+	        case 'jquerymobile':
+	        	grunt.log.writeln('Donwloading the jquery mobile Files');
+	        	grunt.log.writeln('Please wait...');
+	        	
+	        	settings[settings.projectType].jsLibrarys.forEach(function(item) {
+		        	curlFiles[item.path] = item.url;
+	        	});
+	        	
+	        	settings[settings.projectType].cssFiles.forEach(function(item) {
+		        	curlFiles[item.path] = item.url;
+	        	});
+	        	
+	        	grunt.config('curl', curlFiles);
+	        	grunt.task.run('curl');
+			break;
+
+	        
 	        default:
 	        	grunt.log.writeln('no Project type was specified using raw');
 	        break;

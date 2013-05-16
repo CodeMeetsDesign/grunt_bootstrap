@@ -6,7 +6,7 @@
 	
 	"projectName": "My new awesome project",
 	
-	"projectType": "bootstrap",
+	"projectType": "jquerymobile",
 	
 	"bootstrap": {
 		"jsLibrarys": [
@@ -17,6 +17,19 @@
 			"bootstrap-affix.js",
 			"bootstrap-tab.js"
 		]
+	},
+	
+	"jquerymobile":{
+		
+		"jsLibrarys": [
+			{"url": "http://code.jquery.com/jquery-1.9.1.js", "path": "src/js/libs/jquery.js"},
+			{"url": "http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.js", "path": "src/js/libs/jquery-mobile.js"}
+		],
+		
+		"cssFiles": [
+			{"url": "http://code.jquery.com/mobile/1.3.1/jquery.mobile.structure-1.3.1.css", "path": "src/css/libs/jquery-mobile.css"}
+		]
+		
 	},
 	
 	"backbone": {
