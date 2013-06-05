@@ -10,11 +10,12 @@
   "author": "Mario Übleis",
   "license": "MIT",
   "devDependencies": {
-    "grunt": "~0.4.1",
+    "grunt": "*",
     "grunt-contrib-jshint": "*",
     "grunt-contrib-uglify": "*",
     "grunt-contrib-less": "*",
     "grunt-contrib-watch": "*",
+    "grunt-contrib-copy": "*",
     "grunt-curl": "*"
   }
 }
